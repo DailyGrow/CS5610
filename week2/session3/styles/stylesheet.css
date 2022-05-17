@@ -7,8 +7,12 @@ body {
 header {
     text-align: center;
 
-    border-bottom:2px dotted darkslateblue;
+    border-bottom:2px dashed darkslateblue;
     padding-bottom:5px;
+}
+
+a[href*="github"]:hover{
+    color:crimson 
 }
 
 h1 {
@@ -24,4 +28,17 @@ h1 {
 .experience, .education{
     border:2px dotted darkgoldenrod;
     margin:10px 0 10px;
+}
+
+h2::first-letter{
+    font-size:3rem
+}
+
+a[href*="github"]::after{
+    content:"";
+    background-image: url(../images/Github-Mark-32px.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block
 }
