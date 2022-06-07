@@ -1,0 +1,11 @@
+doctype html 
+html(lang='en')
+    head
+        title="Tasks Detail"
+    body
+        h1 You are viewing Task #{id}
+        p Task Title is #{title}
+        if completed 
+            p Task status: Completed 
+        else 
+            p Task status: Not Completed
